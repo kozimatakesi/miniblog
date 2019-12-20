@@ -1,0 +1,7 @@
+<%= form_tag("/tweets/#{@tweet.id}", method: :patch) do %>
+    <h3>
+      編集する
+    </h3>
+    <input type="text" name="text" placeholder=<%= "#{@tweet.text}" %>>
+    <input type="submit" value="SENT">
+<% end %>

@@ -1,0 +1,15 @@
+<% @tweets.each do |tweet| %>
+  <div class="relatedArea">
+    <div class="result">
+      <%= tweet.created_at.to_s(:datetime_jp) %>
+      <%= tweet.name %>VS<%= tweet.opponent %>の対戦結果は
+      <% if tweet.winer == "opponent" %>
+        <span class="red"><%= tweet.opponent %></span>の勝利です！
+      <% else %>
+        <span class="red"><%= tweet.winer %></span>の勝利です！
+      <% end %>
+      <%= link_to '削除', "/tweets/#{tweet.id}/",class: 'btn-square',method: :delete %>
+      </div>
+  </div>
+<% end %>
+<%= paginate(@tweets) %>

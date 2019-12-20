@@ -1,0 +1,85 @@
+@mixin boxSet {
+  padding: 15px
+}
+
+
+
+.div{
+  display: inline-block;
+  _display: inline;
+}
+
+.subject{
+  float: left;
+}
+
+.date{
+  text-align: right;
+}
+
+.header {
+  height: 50px;
+  background-color: green;
+  line-height: 50px;
+  font-size: 30px;
+  color: navy;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header ul{
+  display: flex;
+  font-size: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: aquamarine;
+}
+
+.menu li {
+  float: left;
+  list-style: none;
+  margin: 30px;
+}
+
+.contents {
+  background-color: lavender;
+}
+
+.botton {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.grid-6 {
+  font-family: "ＭＳ Ｐゴシック",serif;
+  font-size: 20px;
+  float: left;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.a {
+  text-decoration: none;
+}
+// 1Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/

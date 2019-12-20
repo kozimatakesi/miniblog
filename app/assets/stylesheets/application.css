@@ -1,0 +1,123 @@
+.red{
+  color: red;
+}
+
+.result{
+  width: 620px;
+  margin: auto;
+  margin-bottom: 1px;
+  border: 5px outset lavender;
+  text-align: center;
+}
+
+
+.mymenu{
+  height: 30px;
+  line-height: 30px;
+  font-size: 11px;
+  background-color: antiquewhite;
+}
+
+.contents_body{
+  width: 100%;
+  background-color: mediumaquamarine;
+  height: 550px;
+}
+
+.contents{
+  background-color: paleturquoise;
+  width: 620px;
+  text-align: center;
+  margin: auto;
+}
+
+
+
+.header {
+  height: 50px;
+  background-color: green;
+  line-height: 50px;
+  font-size: 30px;
+  color: navy;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.menu{
+  height: 50px;
+  background-color: mediumaquamarine;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.menu li {
+  height: 10px;
+  line-height: 10px;
+  float: left;
+  list-style: none;
+  margin: 10px;
+}
+
+.btn-square {
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.grid-6 {
+  font-family: fantasy,"ＭＳ Ｐゴシック";
+  font-size: 30px;
+  float: left;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+a {
+  color: skyblue;
+  text-decoration: none;
+}
+
+footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+}
+
+.win{
+  background-color: gold;
+}
+
+.lose{
+  background-color: gray;
+}
+
+.mydata{
+  display: inline;
+  padding: 0px;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  text-align: center;
+}
+
+.myresult{
+  float: left
+}
+
+.after{
+  clear:both;
+}

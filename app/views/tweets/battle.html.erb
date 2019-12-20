@@ -1,0 +1,23 @@
+<% if user_signed_in? %>
+  <%= form_tag('/tweets', method: :post) do %>
+  <p>あなたは</p>
+  <p>「<%= current_user.nickname %>」</p>
+  <p>対戦相手は？</p>
+    <select name="opponent">
+      <% @users.each do |user| %>
+      <option value="<%= user.id %>">「<%= user.nickname %>」</option>
+      <% end %>
+    </select></br>
+      
+
+  <p>勝者は？</p>
+    <input type="radio" name="winer" value="<%= current_user.nickname %>">あなた <!-- 勝者選択ラジオボタン-->
+    <input type="radio" name="winer" value="opponent">対戦相手
+　　</br>
+    <input type="submit" value="送信">
+  <% end %>
+<% else %>
+  <p><%= link_to "SIGN IN", new_user_session_path, class: 'post' %></p>
+<% end %>
+
+<%= link_to 'ホームへ戻る', "/",method: :get %>

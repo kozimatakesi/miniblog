@@ -1,0 +1,50 @@
+@mixin boxSet {
+  padding: 15px
+}
+
+.relatedArea{
+  @include boxSet;
+}
+
+.div{
+  display: inline-block;
+  _display: inline;
+}
+
+.header {
+  height: 50px;
+  background-color: green;
+  line-height: 50px;
+  font-size: 30px;
+  color: navy;
+}
+
+.header ul{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: aquamarine;
+}
+
+.header li {
+  list-style: none;
+  margin: 0 30px;
+  line-height: 40px;
+}
+
+.contents {
+  background-color: lavender;
+}
+
+.botton {
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+}
+// 1Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/

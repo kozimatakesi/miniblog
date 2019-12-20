@@ -1,0 +1,37 @@
+<div class="myresult">
+  <% @alltweets.each do |tweet| %>
+    <% if (tweet.name == @nickname) || (tweet.opponent == @nickname) %>
+                  <div class="result">
+                    <%= tweet.created_at.to_s(:datetime_jp) %>
+                    <%= tweet.name %>VS<%= tweet.opponent %>の対戦結果は
+                    <% if (tweet.winer == "opponent") && (tweet.opponent == @nickname) %>
+                      <span class="win">
+                      <span class="red"><%= @nickname %></span>の勝利です！
+                      </span>
+                  
+                    <% elsif  tweet.winer == @nickname %>
+                      <span class="win">
+                      <span class="red"><%= tweet.winer %></span>の勝利です！
+                      </span>                   
+                      
+                    <% elsif  tweet.winer == "opponent" %>
+                      <span class="lose">
+                      <span class="red"><%= tweet.opponent %></span>の勝利です！
+                      </span>           
+                      
+                    <% elsif tweet.winer != @nickname%>
+                      <span class="lose">
+                      <span class="red"><%= tweet.name %></span>の勝利です！
+                      </span>
+                      
+                    <% end %>
+                    <%= link_to '削除', "/tweets/#{tweet.id}/",class: 'btn-square',method: :delete %>
+                  </div>
+    <% end %>
+  <% end %>
+</div>
+<div class="after"></div>
+
+
+
+<%= paginate(@alltweets) %>
